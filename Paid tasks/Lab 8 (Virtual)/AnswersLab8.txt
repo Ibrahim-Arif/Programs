@@ -1,0 +1,23 @@
+--- TASK 1.2 ---
+Qs_4) Which convert_it() function is invoked? Explain why?
+convert_it() of derived class (kilos_miles) is invoked because of virtual declearation of convert_it() method in base class. 
+Virtual keyword make sure to get right method in relations like inheritance.
+
+Qs_9) Which convert_it() function is invoked? Explain why? 
+convert_it() of super class (base_conversion) is invoked because yard_meter class did not override convert_it() method in itself.
+So convert_it() inherited into yard_meter class. Just like getters and setters.
+
+Qs_10) Was it mendatory for derived class yards_meter to override inherited virtual function of base_conversion class? Explain?
+No, it was not mendatory for yards_meter class to override inherited virtual convert_it() from base class. 
+Because we have defined convert_it() in base class, so it will use defination of convert_it() from base class into derived class (yards_meter).
+But if did not have defined convert_it() in base class then it will give a compile error.
+
+
+
+--- TASK 1.3 ---
+Qs_3) Create baseOBJ an instance object of base_conversion with initial value = 100.0. Was this instruction successful? What is the cause of the error if any? 
+No, instruction was not successful, because pure virtual method is only declaration of convert_it() method. We didn't defined it anywhere. 
+Without function defination invoking a functions is not possible.
+
+Qs_5) Create ymOBJ an instance of yard_meter class, specifying an initial value of 50. Was this instruction successful? What is the cause of the error if any? 
+No, instruction was not successful, and cause is same as above. convert_it() is only been decleared and never been defined. so when we call it there is nothing to execute.

@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1620483884 source:c:\users\ibrahim\desktop\hashtable project2\main.cpp
+	<iostream>
+	"DateClass.cpp"
+	"TheaterClass.cpp"
+	"HashTableClass.cpp"
+
+1620325624 c:\users\ibrahim\desktop\hashtable project2\dateclass.cpp
+	"date.h"
+
+1620325636 c:\users\ibrahim\desktop\hashtable project2\date.h
+	<iostream>
+	<sstream>
+
+1620484602 c:\users\ibrahim\desktop\hashtable project2\theaterclass.cpp
+	"theater.h"
+
+1620484641 c:\users\ibrahim\desktop\hashtable project2\theater.h
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	"date.h"
+
+1620325608 c:\users\ibrahim\desktop\hashtable project2\hashtableclass.cpp
+	"hashTable.h"
+
+1620325606 c:\users\ibrahim\desktop\hashtable project2\hashtable.h
+	<vector>
+	<ctime>
+	<cmath>
+	<bitset>
+	"date.h"
+	"theater.h"
+

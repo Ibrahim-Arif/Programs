@@ -1,0 +1,6 @@
+------------ Report of all failed transactions ------------ 
+
+ID: 36, Hours: -40
+ID: 33, Hours: 30
+
+Total correctly processed transactions: 14

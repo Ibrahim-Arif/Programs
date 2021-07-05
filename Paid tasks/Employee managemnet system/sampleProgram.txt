@@ -1,0 +1,178 @@
+
+Using Arrays of Objects
+ 
+To try this program with your compiler, highlight the program text below, make a copy of it (ctrl-c in Windows), open a source code window in your compiler and paste the program code into the window (ctrl-v in Windows).
+//**************************************************************
+//*  This program allows the user to look up item prices   at a store. The price information is loaded from
+//*    a file and stored in an array of objects.
+//**************************************************************
+
+#include <iostream>
+#include <fstream>
+#include <cstring>
+using namespace std;
+
+class ItemRec
+{
+private:
+   int itemNo;             // inventory item number
+   char description[41];   // item description
+   float price;            // item price
+public:
+   ItemRec();
+   ItemRec(int, char [], float);
+   void set(int, char [], float);
+   int getItemNo();
+   const char * getDesc();
+   float getPrice();
+};
+
+ItemRec::ItemRec()
+{
+   itemNo = 0;
+   strcpy( description, "" );
+   price = 0;
+}
+
+ItemRec::ItemRec(int item, char desc[], float itemPrice)
+{
+   set(item, desc, itemPrice);
+}
+
+void ItemRec::set(int item, char desc[], float itemPrice)
+{
+   itemNo = item;
+   strcpy( description, desc );
+   price = itemPrice;
+}
+
+int ItemRec::getItemNo()
+{
+   return itemNo;
+}
+
+const char * ItemRec::getDesc()
+{
+   return description; 
+}
+
+float ItemRec::getPrice()
+{
+   return price;
+}
+
+const int MAX_ITEMS = 200;
+
+void getItems( ifstream&, ItemRec [], int&);
+int search( int, ItemRec [], int);
+
+int main()
+{
+   ItemRec item[MAX_ITEMS];  // inventory items
+   int numItems;             // number of items in the lists
+   int srchItemNo;           // an item number to look up
+   int position;             // position of an item in list
+   ifstream itemFile;        // item price file
+
+// open Item Price file
+   itemFile.open("items.txt");
+   if (!itemFile)
+   {
+      cout << "Can not open item file \"itemfile.txt\"" << endl;
+      return 1;
+   }
+
+// load item price file
+   getItems( itemFile, item, numItems);
+
+// look up item prices
+   cout << "Enter Item Number (or -1 to quit): ";
+   cin >> srchItemNo;
+   while (srchItemNo > 0)
+   {
+   // get price for item
+      position = search( srchItemNo, item, numItems);
+      if (position == -1)
+      {
+	      cout << "Item " << srchItemNo
+              << " is not in the inventory" << endl;
+      }
+      else
+         cout << "Price for item " << srchItemNo
+		      << " " << item[position].getDesc()
+              << " is  $ " << item[position].getPrice() << endl;
+
+   // get next item
+      cout << "Enter Item Number (or -1 to quit): ";
+      cin >> srchItemNo;
+   }
+
+   return 0;
+}
+
+//**************************************************************
+//* FUNCTION getItems
+//*
+//* Copies item information from file into an array
+//**************************************************************
+
+void getItems( ifstream &itemFile,   // in  - item price file
+	            ItemRec   item[],    // out - list of items
+	            int      &numItems)  // out - number of items
+{
+   int   oneItemNo;    // an item number
+   char  oneDesc[41];  // description of item
+   float onePrice;     // price for the item
+
+   numItems = 0;
+   itemFile >> oneItemNo >> onePrice;
+   itemFile.ignore();                 // discard space before desc
+   itemFile.getline( oneDesc, 41 );
+   while (itemFile && numItems < MAX_ITEMS)
+   {
+   // move new item into array and increment item count
+      item[numItems].set( oneItemNo, oneDesc, onePrice );
+      numItems++;
+
+   // get next item information
+      itemFile >> oneItemNo >> onePrice;
+      itemFile.ignore();                 // discard space
+      itemFile.getline( oneDesc, 41 );
+   }
+}
+
+//**************************************************************
+//*  FUNCTION search
+//*
+//*  Find the location of an item in a list.
+//*
+//**************************************************************
+
+int search( int srchVal,     // in - value to search for
+		      ItemRec list[],  // in - list to search
+		      int length)      // in - number of items in list
+{
+// search list for item and return its position if found
+   int index = 0;
+   while (index < length)
+   {
+      if (srchVal == list[index].getItemNo())
+	      return index;
+      index++;
+   }
+
+// item not found - return a flag
+   return -1;
+}
+
+
+
+
+
+Return to Programming Fundamentals II Home Page
+
+Copyright: © 2013 by the Austin Community College. 
+ Department of Computer Studies. All rights reserved. 
+ Comments to: Bob Comer
+ Last updated: January 12, 2013 
+ 

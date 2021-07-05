@@ -1,0 +1,10 @@
+9
+to study            1 estudiar
+to search           2 buscar mirar
+to be               1 ser
+hello               1 hola
+good                2 buena bueno
+helpful             1 servicial
+morning             1 manana
+winter              1 invierno
+bye                 1 adios
