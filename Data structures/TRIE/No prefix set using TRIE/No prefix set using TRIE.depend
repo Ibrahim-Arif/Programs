@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1606139773 source:c:\users\bugs-bunny\desktop\c++\no prefix set using trie\main.cpp
+	<iostream>
+	<string>
+	<vector>
+

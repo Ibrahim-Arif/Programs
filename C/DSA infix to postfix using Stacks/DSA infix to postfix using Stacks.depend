@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1603476687 source:c:\users\bugs-bunny\desktop\c\dsa infix to postfix using stacks\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605606667 source:c:\users\bugs-bunny\desktop\c++\merging communities using ll\main.cpp
+	<iostream>
+	<vector>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1575229725 source:c:\users\bugs-bunny\desktop\programs\pf exercise 7.3.2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

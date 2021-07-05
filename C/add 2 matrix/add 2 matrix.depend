@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1565788540 source:c:\users\bugs-bunny\desktop\programs\add 2 matrix\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605687293 source:c:\users\bugs-bunny\desktop\c++\disjoint set (find and union)\main.cpp
+	<iostream>
+	<vector>
+	<bits/stdc++.h>
+

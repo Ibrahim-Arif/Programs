@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1611598773 source:c:\users\bugs-bunny\desktop\c\fisher project\main.cpp
+	<iostream>
+	<ctime>
+

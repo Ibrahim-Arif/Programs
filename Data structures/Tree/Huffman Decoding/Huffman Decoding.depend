@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1603198596 source:c:\users\bugs-bunny\desktop\c++\huffman decoding\main.cpp
+	<iostream>
+	<cstring>
+	<algorithm>
+

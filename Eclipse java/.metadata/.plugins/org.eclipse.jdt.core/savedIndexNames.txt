@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\BUGS-BUNNY\Desktop\Java\.metadata\.plugins\org.eclipse.jdt.core
+1248545562.index
+1944290604.index
+2540903307.index
+2787644803.index
+2623265085.index
+1436014715.index

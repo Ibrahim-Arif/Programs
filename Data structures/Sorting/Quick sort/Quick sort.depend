@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1608025175 source:c:\users\bugs-bunny\desktop\data structures\sorting\quick sort\main.cpp
+	<iostream>
+	<time.h>
+

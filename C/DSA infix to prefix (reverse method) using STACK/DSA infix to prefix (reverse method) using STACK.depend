@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1601929236 source:c:\users\bugs-bunny\desktop\c\dsa infix to prefix (reverse method) using stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

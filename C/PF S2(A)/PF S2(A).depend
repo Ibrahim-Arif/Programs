@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1574280245 source:c:\users\bugs-bunny\desktop\programs\pf s2(a)\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1577113760 source:c:\users\bugs-bunny\desktop\programs\fwrite & fread & fseek\main.c
+	<stdio.h>
+	<stdlib.h>
+

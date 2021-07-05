@@ -1,0 +1,91 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Point;
+import java.awt.Color;
+import javax.swing.border.MatteBorder;
+
+public class framae extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					framae frame = new framae();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	
+	public void paint(Graphics g) {
+		Color c2 = Color.black;         //black road
+        g.setColor( c2 );
+        g.fillRect(50, 100, 750, 500);
+        
+        /*Color c1 = Color.green;  
+        g.setColor( c1 );  
+        g.fillRect( 150, 200, 550, 300 ); //grass */
+ 
+        g.setColor( c2 );  
+        g.drawRect(50, 100, 750, 500);  // outer edge  
+        g.drawRect(150, 200, 550, 300); // inner edge 
+ 
+        Color c3 = Color.yellow;  
+        g.setColor( c3 );  
+        g.drawRect( 100, 150, 650, 400 ); // mid-lane marker 
+        
+        Color c4 = Color.white;  
+        g.setColor( c4 );  
+        g.drawLine( 425, 500, 425, 600 ); // start line
+        
+        /*Color c5 = Color.red;
+        g.setColor(c5);
+        g.fillRect(430, 510, 50, 30);*/
+	}
+	
+	public framae() {
+		setUndecorated(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 850, 650);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		panel.setBackground(Color.GREEN);
+		panel.setLocation(new Point(150, 200));
+		panel.setBounds(150, 200, 550, 300);
+		contentPane.add(panel);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.BLACK);
+		panel_1.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		panel_1.setBounds(50, 100, 750, 500);
+		contentPane.add(panel_1);
+		panel_1.setLayout(null);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(Color.BLACK);
+		panel_2.setBorder(new MatteBorder(1, 1, 1, 1, (Color) Color.YELLOW));
+		panel_2.setBounds(50, 50, 650, 400);
+		panel_1.add(panel_2);
+	}
+}

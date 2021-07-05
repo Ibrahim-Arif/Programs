@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605646885 source:c:\users\bugs-bunny\desktop\c++\components in a graph (disjoint sets)\main.cpp
+	<iostream>
+	<vector>
+

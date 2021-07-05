@@ -1,0 +1,8 @@
+Name: a 
+Address: a a, a 
+Paper detail: a Newspaper Only 1000 30
+
+Name: b 
+Address: b b, b 
+Paper detail: b Newspaper and Magzine 900 15
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1578134703 source:c:\users\bugs-bunny\desktop\programs\read from file\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

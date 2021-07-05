@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1572468385 source:c:\users\bugs-bunny\desktop\programs\pf exercise 4.2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1572468385 source:c:\users\bugs-bunny\desktop\programs\pf exercise 4\pf exercise 4.2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

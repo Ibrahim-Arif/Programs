@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1576172464 source:c:\users\bugs-bunny\desktop\programs\pop quiz\main.c
+	<stdio.h>
+	<stdlib.h>
+

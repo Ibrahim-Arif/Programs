@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1599666032 source:c:\users\bugs-bunny\desktop\c\dsa int stack using single linked list\main.c
+	<stdio.h>
+	<stdlib.h>
+

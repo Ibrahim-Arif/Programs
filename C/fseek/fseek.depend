@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1576950987 source:c:\users\bugs-bunny\desktop\programs\fseek\main.c
+	<stdio.h>
+	<stdlib.h>
+

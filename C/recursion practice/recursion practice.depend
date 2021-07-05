@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600761909 source:c:\users\bugs-bunny\desktop\c\recursion practice\main.c
+	<stdio.h>
+	<stdlib.h>
+

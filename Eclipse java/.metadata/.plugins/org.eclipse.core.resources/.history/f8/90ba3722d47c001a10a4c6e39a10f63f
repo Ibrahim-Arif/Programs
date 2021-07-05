@@ -1,0 +1,117 @@
+import java.util.*;
+import java.sql.*;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JTable;
+import javax.swing.border.MatteBorder;
+
+public class GUI extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtEnterIdTo;
+	private JTable table;
+	static private Connection con;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					connection();
+					GUI frame = new GUI();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public GUI() {		
+		setUndecorated(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 642, 537);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel taskbar = new JPanel();
+		taskbar.setForeground(Color.WHITE);
+		taskbar.setBackground(Color.BLACK);
+		taskbar.setBounds(0, 0, 642, 32);
+		contentPane.add(taskbar);
+		taskbar.setLayout(null);
+		
+		JLabel exit = new JLabel("");
+		exit.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				System.exit(0);
+			}
+		});
+		exit.setBounds(607, 0, 25, 32);
+		taskbar.add(exit);
+		exit.setOpaque(true);
+		exit.setBackground(Color.BLACK);
+		exit.setForeground(Color.WHITE);
+		exit.setIcon(new ImageIcon("C:\\Users\\BUGS-BUNNY\\Desktop\\Java\\task 20.1\\icons\\icons8_delete_25px.png"));
+		
+		JPanel workarea = new JPanel();
+		workarea.setBounds(0, 33, 642, 504);
+		contentPane.add(workarea);
+		workarea.setLayout(null);
+		
+		txtEnterIdTo = new JTextField();
+		txtEnterIdTo.setText("Enter ID to find");
+		txtEnterIdTo.setBounds(10, 36, 261, 41);
+		workarea.add(txtEnterIdTo);
+		txtEnterIdTo.setColumns(10);
+		
+		JButton find = new JButton("Find");
+		find.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				String search;
+			}
+		});
+		find.setBounds(285, 36, 85, 41);
+		workarea.add(find);
+		
+		JButton findAll = new JButton("Find All");
+		findAll.setBounds(380, 36, 85, 41);
+		workarea.add(findAll);
+		
+		table = new JTable();
+		table.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		table.setBounds(10, 491, 622, -388);
+		workarea.add(table);
+	}
+	
+	static void connection() {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/infosys","root","admin");
+			System.out.println("connected");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

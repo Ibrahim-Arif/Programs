@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1577107199 source:c:\users\bugs-bunny\desktop\programs\pf lab final 2018\main.c
+	<stdio.h>
+	<stdlib.h>
+

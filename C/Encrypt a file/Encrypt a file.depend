@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1577100673 source:c:\users\bugs-bunny\desktop\programs\encrypt a file\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1577100673 source:c:\users\bugs-bunny\desktop\c programs\encrypt a file\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1577100673 source:c:\users\bugs-bunny\desktop\c\encrypt a file\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

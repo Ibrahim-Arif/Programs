@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1600521063 source:c:\users\bugs-bunny\desktop\c\dsa int static heap\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

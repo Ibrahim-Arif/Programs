@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1604686592 source:c:\users\bugs-bunny\desktop\c++\int directed graph with dijkstra algo\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<bits/stdc++.h>
+
+1618647889 source:g:\programs\data structures\graphs\int directed graph with dijkstra algo\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<bits/stdc++.h>
+

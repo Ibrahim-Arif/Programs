@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605700757 source:c:\users\bugs-bunny\desktop\c++\kruskal's algo for min cost spanning tree\main.cpp
+	<iostream>
+	<vector>
+

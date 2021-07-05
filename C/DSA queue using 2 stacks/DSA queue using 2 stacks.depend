@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1603717318 source:c:\users\bugs-bunny\desktop\c\dsa queue using 2 stacks\main.c
+	<stdio.h>
+	<stdlib.h>
+

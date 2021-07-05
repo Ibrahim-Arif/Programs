@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1604742272 source:c:\users\bugs-bunny\desktop\c++\contact searching using hashmaps\main.cpp
+	<iostream>
+	<map>
+	<iterator>
+

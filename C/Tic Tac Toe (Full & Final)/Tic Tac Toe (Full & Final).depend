@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1568908295 source:c:\users\jack-sparrow\desktop\programs\tic tac toe (full & final)\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1568908505 source:c:\users\bugs-bunny\desktop\programs\tic tac toe (full & final)\main.c
+	<stdio.h>
+	<stdlib.h>
+

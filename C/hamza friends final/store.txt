@@ -1,0 +1,10 @@
+chips 1 10 60 5
+lays 2 5 90 2
+wavy 3 2 55 51
+chocolate 4 102 78 55
+fock 5 101 601 35
+mango 6 1022 6 15
+banaan 7 102 20 85
+apple 8 102 60 8
+laptop 9 103 5000 2
+flowers 10 104 610 1

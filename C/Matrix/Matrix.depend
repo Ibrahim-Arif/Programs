@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1563536429 source:c:\users\jack-sparrow\desktop\programs\matrix\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+

@@ -1,0 +1,283 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
+import javax.swing.border.MatteBorder;
+import javax.swing.JTextField;
+import java.awt.Font;
+import java.awt.SystemColor;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JScrollPane;
+import java.awt.event.MouseMotionAdapter;
+
+public class mainFrane extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField searchField;
+	private JTextField msgField;
+	private JLabel close;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					mainFrane frame = new mainFrane();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public mainFrane() {
+		setUndecorated(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 1060, 743);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 255, 255));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel search = new JPanel();
+		search.setBackground(new Color(51, 102, 255));
+		search.setBounds(80, 10, 239, 55);
+		contentPane.add(search);
+		search.setLayout(null);
+		
+		JLabel SearchPanel = new JLabel("");
+		SearchPanel.setHorizontalTextPosition(SwingConstants.CENTER);
+		SearchPanel.setHorizontalAlignment(SwingConstants.CENTER);
+		SearchPanel.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_search_30px.png")));
+		SearchPanel.setBounds(188, 0, 51, 55);
+		search.add(SearchPanel);
+		
+		JPanel userName = new JPanel();
+		userName.setBorder(null);
+		userName.setBackground(new Color(51, 102, 255));
+		userName.setBounds(329, 0, 732, 75);
+		contentPane.add(userName);
+		userName.setLayout(null);
+		
+		close = new JLabel("");
+		close.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				System.exit(0);
+			}
+		});
+		close.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_menu_vertical_30px.png")));
+		close.setHorizontalTextPosition(SwingConstants.CENTER);
+		close.setHorizontalAlignment(SwingConstants.CENTER);
+		close.setBounds(694, 0, 38, 75);
+		userName.add(close);
+		
+		JLabel audioCall = new JLabel("");
+		audioCall.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_call_30px.png")));
+		audioCall.setHorizontalTextPosition(SwingConstants.CENTER);
+		audioCall.setHorizontalAlignment(SwingConstants.CENTER);
+		audioCall.setBounds(648, 0, 48, 75);
+		userName.add(audioCall);
+		
+		JLabel videoCall = new JLabel("");
+		videoCall.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_video_call_30px.png")));
+		videoCall.setHorizontalTextPosition(SwingConstants.CENTER);
+		videoCall.setHorizontalAlignment(SwingConstants.CENTER);
+		videoCall.setBounds(595, 0, 48, 75);
+		userName.add(videoCall);
+		
+		JPanel currentUserPanel = new JPanel();
+		currentUserPanel.setLayout(null);
+		currentUserPanel.setBorder(null);
+		currentUserPanel.setBackground(new Color(51, 102, 255));
+		currentUserPanel.setBounds(0, 0, 234, 71);
+		userName.add(currentUserPanel);
+		
+		JLabel CurrentUserIcon = new JLabel("");
+		CurrentUserIcon.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_user_30px.png")));
+		CurrentUserIcon.setHorizontalAlignment(SwingConstants.CENTER);
+		CurrentUserIcon.setBorder(null);
+		CurrentUserIcon.setBounds(0, 0, 62, 71);
+		currentUserPanel.add(CurrentUserIcon);
+		
+		JLabel CurrentUserName = new JLabel("User1");
+		CurrentUserName.setForeground(Color.WHITE);
+		CurrentUserName.setFont(new Font("Arial", Font.PLAIN, 18));
+		CurrentUserName.setBounds(57, 10, 89, 30);
+		currentUserPanel.add(CurrentUserName);
+		
+		JLabel label_12 = new JLabel(" typing...");
+		label_12.setForeground(Color.WHITE);
+		label_12.setFont(new Font("Arial", Font.PLAIN, 12));
+		label_12.setBounds(56, 30, 70, 20);
+		currentUserPanel.add(label_12);
+		
+		JPanel menu = new JPanel();
+		menu.setBackground(new Color(51, 102, 255));
+		menu.setBounds(0, 0, 70, 743);
+		contentPane.add(menu);
+		menu.setLayout(null);
+		
+		JLabel home = new JLabel("");
+		home.setHorizontalAlignment(SwingConstants.CENTER);
+		home.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_home_50px_1.png")));
+		home.setBounds(0, 238, 69, 55);
+		menu.add(home);
+		
+		JLabel users = new JLabel("");
+		users.setHorizontalAlignment(SwingConstants.CENTER);
+		users.setHorizontalTextPosition(SwingConstants.LEADING);
+		users.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_user_50px.png")));
+		users.setBounds(0, 154, 69, 55);
+		menu.add(users);
+		
+		JLabel chatArea = new JLabel("");
+		chatArea.setOpaque(true);
+		chatArea.setBackground(new Color(51, 102, 153));
+		chatArea.setBorder(new MatteBorder(0, 4, 0, 0, (Color) new Color(255, 255, 255)));
+		chatArea.setHorizontalAlignment(SwingConstants.CENTER);
+		chatArea.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_chat_50px.png")));
+		chatArea.setBounds(0, 329, 71, 55);
+		menu.add(chatArea);
+		
+		JLabel star = new JLabel("");
+		star.setHorizontalAlignment(SwingConstants.CENTER);
+		star.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_star_50px.png")));
+		star.setBounds(0, 413, 69, 55);
+		menu.add(star);
+		
+		JLabel setting = new JLabel("");
+		setting.setHorizontalAlignment(SwingConstants.CENTER);
+		setting.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_settings_50px.png")));
+		setting.setBounds(0, 501, 69, 55);
+		menu.add(setting);
+		
+		JLabel drag = new JLabel("");
+		drag.addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
+			public void mouseDragged(MouseEvent e) {
+				int coX = e.getXOnScreen();
+				int coY = e.getYOnScreen();
+				
+				setLocation(coX, coY);
+			}
+		});
+		drag.setBounds(0, 0, 69, 30);
+		menu.add(drag);
+		
+		JPanel names = new JPanel();
+		names.setBackground(new Color(51, 102, 153));
+		names.setBounds(0, 0, 328, 743);
+		contentPane.add(names);
+		names.setLayout(null);
+		
+		JPanel existUserPanel = new JPanel();
+		existUserPanel.setBorder(null);
+		existUserPanel.setBackground(new Color(51, 102, 153));
+		existUserPanel.setBounds(83, 87, 234, 71);
+		names.add(existUserPanel);
+		existUserPanel.setLayout(null);
+		
+		JLabel existUserIcon = new JLabel("");
+		existUserIcon.setBorder(new MatteBorder(0, 0, 1, 0, (Color) SystemColor.activeCaptionBorder));
+		existUserIcon.setBounds(0, 0, 62, 71);
+		existUserPanel.add(existUserIcon);
+		existUserIcon.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_user_30px.png")));
+		existUserIcon.setHorizontalAlignment(SwingConstants.CENTER);
+		
+		JLabel existUserName = new JLabel("User1");
+		existUserName.setFont(new Font("Arial", Font.PLAIN, 18));
+		existUserName.setForeground(new Color(255, 255, 255));
+		existUserName.setBounds(57, 10, 89, 30);
+		existUserPanel.add(existUserName);
+		
+		JLabel lblNewLabel_3 = new JLabel(" typing...");
+		lblNewLabel_3.setForeground(new Color(255, 255, 255));
+		lblNewLabel_3.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblNewLabel_3.setBounds(56, 30, 70, 20);
+		existUserPanel.add(lblNewLabel_3);
+		
+		searchField = new JTextField();
+		searchField.setBounds(83, 20, 181, 35);
+		names.add(searchField);
+		searchField.setForeground(new Color(255, 255, 255));
+		searchField.setBorder(null);
+		searchField.setBackground(new Color(51, 102, 255));
+		searchField.setFont(new Font("Arial", Font.PLAIN, 18));
+		searchField.setText("Search");
+		searchField.setColumns(10);
+		
+		JPanel chatbox = new JPanel();
+		chatbox.setBackground(new Color(192, 192, 192));
+		chatbox.setBounds(329, 0, 731, 743);
+		contentPane.add(chatbox);
+		chatbox.setLayout(null);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(240, 240, 240));
+		panel_1.setBounds(0, 674, 731, 69);
+		chatbox.add(panel_1);
+		panel_1.setLayout(null);
+		
+		JLabel send = new JLabel("");
+		send.setBackground(new Color(240, 240, 240));
+		send.setHorizontalAlignment(SwingConstants.CENTER);
+		send.setHorizontalTextPosition(SwingConstants.CENTER);
+		send.setOpaque(true);
+		send.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_sent_30px_2.png")));
+		send.setBounds(673, 10, 48, 57);
+		panel_1.add(send);
+		
+		JLabel emoji = new JLabel("");
+		emoji.setBackground(new Color(240, 240, 240));
+		emoji.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_neutral_30px_1.png")));
+		emoji.setOpaque(true);
+		emoji.setHorizontalTextPosition(SwingConstants.CENTER);
+		emoji.setHorizontalAlignment(SwingConstants.CENTER);
+		emoji.setBounds(10, 10, 38, 57);
+		panel_1.add(emoji);
+		
+		JLabel attach = new JLabel("");
+		attach.setBackground(new Color(240, 240, 240));
+		attach.setIcon(new ImageIcon(mainFrane.class.getResource("/icons/icons8_attach_30px_2.png")));
+		attach.setOpaque(true);
+		attach.setHorizontalTextPosition(SwingConstants.CENTER);
+		attach.setHorizontalAlignment(SwingConstants.CENTER);
+		attach.setBounds(51, 10, 38, 57);
+		panel_1.add(attach);
+		
+		msgField = new JTextField();
+		msgField.setBorder(null);
+		msgField.setBackground(new Color(240, 240, 240));
+		msgField.setForeground(new Color(153, 153, 153));
+		msgField.setFont(new Font("Arial", Font.PLAIN, 18));
+		msgField.setText("Type your message here");
+		msgField.setBounds(99, 10, 574, 49);
+		panel_1.add(msgField);
+		msgField.setColumns(10);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(192, 192, 192));
+		panel.setBounds(0, 78, 731, 599);
+		chatbox.add(panel);
+		panel.setLayout(null);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(0, 608, 731, -601);
+		panel.add(scrollPane);
+	}
+}

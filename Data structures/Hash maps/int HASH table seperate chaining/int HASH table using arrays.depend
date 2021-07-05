@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1603888042 source:c:\users\bugs-bunny\desktop\c++\int hash table using arrays\main.cpp
+	<iostream>
+	<array>
+	<vector>
+
+1603958663 source:c:\users\bugs-bunny\desktop\c++\int hash table seperate chaining\main.cpp
+	<iostream>
+	<array>
+	<vector>
+

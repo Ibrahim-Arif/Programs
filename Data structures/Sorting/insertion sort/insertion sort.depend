@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1607329664 source:c:\users\bugs-bunny\desktop\c++\insertion sort\main.cpp
+	<iostream>
+	<limits>
+	<time.h>
+

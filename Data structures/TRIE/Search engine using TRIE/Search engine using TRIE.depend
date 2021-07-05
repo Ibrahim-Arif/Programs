@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605903938 source:c:\users\bugs-bunny\desktop\c++\search engine using trie\main.cpp
+	<iostream>
+	<string>
+	<vector>
+

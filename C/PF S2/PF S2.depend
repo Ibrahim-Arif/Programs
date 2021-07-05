@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1576924346 source:c:\users\bugs-bunny\desktop\programs\pf s2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

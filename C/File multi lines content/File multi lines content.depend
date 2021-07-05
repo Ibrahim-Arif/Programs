@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1576129769 source:c:\users\bugs-bunny\desktop\programs\file multi lines content\main.c
+	<stdio.h>
+	<stdlib.h>
+

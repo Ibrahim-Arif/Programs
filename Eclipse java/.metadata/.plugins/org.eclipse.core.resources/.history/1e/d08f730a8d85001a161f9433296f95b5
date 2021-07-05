@@ -1,0 +1,55 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Point;
+import java.awt.Color;
+
+public class framae extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					framae frame = new framae();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public framae() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 850, 650);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.GREEN);
+		panel.setLocation(new Point(150, 200));
+		panel.setBounds(150, 200, 550, 300);
+		contentPane.add(panel);
+		
+		Color c2 = Color.black;
+		Graphics g = null;
+		g.setColor( c2 );  
+        g.drawRect(50, 100, 750, 500);  // outer edge  
+        g.drawRect(150, 200, 550, 300); // inner edge 
+		
+	}
+}

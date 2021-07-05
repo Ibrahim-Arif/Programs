@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605524350 source:c:\users\bugs-bunny\desktop\c++\infix to postfix evaluation using ll stack\main.cpp
+	<iostream>
+	<string>
+	<cmath>
+

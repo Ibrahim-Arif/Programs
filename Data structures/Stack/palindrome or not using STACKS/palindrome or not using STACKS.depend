@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1603352765 source:c:\users\bugs-bunny\desktop\c++\palindrome or not using stacks\main.cpp
+	<iostream>
+	<string>
+	<cmath>
+

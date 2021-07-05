@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1603786946 source:c:\users\bugs-bunny\desktop\c++\dynamic generic heapify\main.cpp
+	<iostream>
+	<cstdlib>
+	<time.h>
+

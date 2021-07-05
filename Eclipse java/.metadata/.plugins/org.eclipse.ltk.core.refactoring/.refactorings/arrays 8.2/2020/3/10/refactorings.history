@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;student.add&apos; in &apos;student&apos;&#x0D;&#x0A;- Original project: &apos;arrays 8.2&apos;&#x0D;&#x0A;- Original element: &apos;student.add&apos;&#x0D;&#x0A;- Getter method name: &apos;getAdd&apos;&#x0D;&#x0A;- Setter method name: &apos;setAdd&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;add&apos;" flags="589830" getter="getAdd" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;{student.java[student^add" insertion="5" setter="setAdd" stamp="1583573274729" version="1.0" visibility="1"/>
+</session>

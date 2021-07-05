@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1604604682 source:c:\users\bugs-bunny\desktop\c++\generic graph using adjucent list\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<stack>
+
+1605725647 source:g:\programs\data structures\graphs\generic graph using adjucent list\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<stack>
+

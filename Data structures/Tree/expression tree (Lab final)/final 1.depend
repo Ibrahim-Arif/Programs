@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1609406122 source:c:\users\bugs-bunny\desktop\data structures\final 1\main.cpp
+	<iostream>
+	<string>
+	<cmath>
+

@@ -1,0 +1,58 @@
+head{
+    background-color: aliceblue;
+}
+
+#downloadButtion{
+    background-color:  rgb(183, 5, 94);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+#nextButton{
+    background-color: darkorchid;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+a {
+  color: darkorchid;
+  font-size: 16px;
+  text-decoration: none;
+}
+a:hover{
+    font-size: 22px;
+    color: purple;
+}
+
+.imageStyle{
+    background-color:darkorchid;
+    border-radius: 100px;
+    width: 400px;
+    height: 550px;
+}
+
+body {
+  background-color: azure;
+  color: #202020;
+  text-align: center;
+  font-family: poppins, sans-serif;
+}
+
+#biggest {
+  font-size: 80px;
+}
+
+.invisible {
+  color: azure;
+}
+
+dir{
+    width: 200px; 
+    height: 40;
+}

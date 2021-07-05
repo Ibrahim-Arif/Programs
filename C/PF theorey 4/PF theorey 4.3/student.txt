@@ -1,0 +1,7 @@
+Ibrahim		27		3.20
+haseeb		34		3.10
+shami		47		3.00
+Faizan		61		2.70
+bilal		99		3.40
+ali		120		3.40
+zohaib		3		3.10

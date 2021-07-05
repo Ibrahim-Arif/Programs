@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1575351345 source:c:\users\bugs-bunny\desktop\programs\auto sentence generator\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

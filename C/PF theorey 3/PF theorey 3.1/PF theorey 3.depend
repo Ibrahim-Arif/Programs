@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1574289694 source:c:\users\bugs-bunny\desktop\programs\pf theorey 3\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1574539381 source:c:\users\bugs-bunny\desktop\programs\pf theorey 3.1\main.c
+	<stdio.h>
+	<stdlib.h>
+

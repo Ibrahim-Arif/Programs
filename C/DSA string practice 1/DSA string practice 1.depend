@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1599228708 source:c:\users\bugs-bunny\desktop\c\dsa string practice 1\main.c
+	<stdio.h>
+	<stdlib.h>
+

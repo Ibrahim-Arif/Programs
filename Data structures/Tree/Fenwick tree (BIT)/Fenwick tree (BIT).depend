@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1606570471 source:c:\users\bugs-bunny\desktop\c++\fenwick tree (bit)\main.cpp
+	<iostream>
+	<vector>
+

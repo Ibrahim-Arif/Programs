@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1578243895 source:c:\users\bugs-bunny\desktop\programs\smallest of floating values\main.c
+	<stdio.h>
+	<stdlib.h>
+

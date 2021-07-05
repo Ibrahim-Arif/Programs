@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1576923558 source:c:\users\bugs-bunny\desktop\programs\1d array addition\main.c
+	<stdio.h>
+	<stdlib.h>
+

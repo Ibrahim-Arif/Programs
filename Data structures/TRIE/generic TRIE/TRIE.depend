@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1606136054 source:c:\users\bugs-bunny\desktop\c++\trie\main.cpp
+	<iostream>
+	<string>
+	<vector>
+

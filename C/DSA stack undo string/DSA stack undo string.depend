@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1599418355 source:c:\users\bugs-bunny\desktop\c\dsa stack undo string\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

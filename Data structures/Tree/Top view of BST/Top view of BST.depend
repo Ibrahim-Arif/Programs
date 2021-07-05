@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1603182055 source:c:\users\bugs-bunny\desktop\c++\top view of bst\main.cpp
+	<iostream>
+	<queue>
+

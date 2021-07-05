@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1601836280 source:c:\users\bugs-bunny\desktop\c\dsa int stack dynamic  practice\main.c
+	<stdio.h>
+	<stdlib.h>
+
