@@ -2,37 +2,32 @@
 using namespace std;
 
 template<class T>
-class node{
+class Node{
 public:
     T data;
     int priority;
-    node<T> *left;
-    node<T> *right;
+    Node<T> *left;
+    Node<T> *right;
 
-    node(){}
-    node(T d, int p){
+    Node(){}
+    Node(T d, int p){
         data = d;
         priority = p;
-        left = nullptr;
-        right = nullptr;
+        left = NULL;
+        right = NULL;
     }
 };
 
 template<class T>
 class priority_Q{
 public:
-    node<T> *rear, *front;
+    Node<T> *rear, *front;
     priority_Q(){
-        rear = front = nullptr;
+        rear = front = NULL;
     }
 
     void enQ(T ele, int prio){
-        if(prio < 1 || prio > 5){
-            cout<<"Wrong priority"<<endl;
-            return;
-        }
-
-        node<T> *n = new node<T>(ele, prio);
+        Node<T> *n = new Node<T>(ele, prio);
         if(!rear){
             rear = front = n;
             return;
@@ -46,7 +41,7 @@ public:
 
     T dQ(){
         T value;
-        node<T> *temp = front;
+        Node<T> *temp = front;
 
         if(temp)
             value = temp->data;
@@ -55,20 +50,20 @@ public:
 
         if(front == rear){
             delete temp;
-            front = rear = nullptr;
+            front = rear = NULL;
 
             return value;
         }
 
         front = front->left;
-        front->right = nullptr;
+        front->right = NULL;
         delete temp;
 
         return value;
     }
 
     void adjust(){
-        node<T> *temp = rear, *next;
+        Node<T> *temp = rear, *next;
         T hold;
 
         while(temp){
@@ -96,7 +91,7 @@ public:
 int main()
 {
     priority_Q<int> pq;
-    int ele, prio, choice;
+    int ele, prio, choice=1;
 
     cout<<"1: Enqueue. \n2: Dequeue. \n0: Exit."<<endl;
     while(choice){
