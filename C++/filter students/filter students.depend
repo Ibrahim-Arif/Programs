@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1626366938 source:c:\users\ibrahim\desktop\filter students\main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+

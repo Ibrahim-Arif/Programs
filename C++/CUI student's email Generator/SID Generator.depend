@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1626273846 source:c:\users\ibrahim\desktop\sid generator\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+
