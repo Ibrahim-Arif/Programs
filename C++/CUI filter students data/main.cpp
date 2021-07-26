@@ -11,7 +11,7 @@ void filterDirtyDataToGetAll(){
     fstream foutput("allEmails.dat", fstream::out);
 
     while (fin >> noskipws >> ch) {
-        if(isWrite)
+        if(isWrite && ch != '>')
             foutput << ch;
 
         if(ch == '<'){
@@ -86,7 +86,7 @@ void filterAllEmails(){
 int main()
 {
     //filterDirtyData();
-    //filterAllEmails();
+    filterAllEmails();
     //filterDirtyDataToGetAll();
 
 
