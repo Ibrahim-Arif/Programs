@@ -1,0 +1,13 @@
+
+ Created new thread (1) ...
+Hello! - got hello! from thread #1
+
+ Created new thread (2) ...
+Hello! - got hello! from thread #2
+
+ Created new thread (3) ...
+Hello! - got hello! from thread #3
+
+ Created new thread (4) ...
+Hello! - got hello! from thread #4
+All threads are done!
