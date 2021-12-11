@@ -9,6 +9,8 @@ public abstract class Food implements Comparable<Food> {
     private int daysSincePotted;
     protected Soil preferredSoil;
     
+    
+    // constructor. 
     public Food(String n, double sp, int dtm, int ra){
         this.name = n;
         this.sellPrice = sp;
@@ -16,6 +18,7 @@ public abstract class Food implements Comparable<Food> {
         this.requiredArea = ra;
     }
     
+    // getters
     public String getName(){
         return this.name;
     }
@@ -35,7 +38,10 @@ public abstract class Food implements Comparable<Food> {
         return this.requiredArea;
     }
     
+    // abstract grow function 
     abstract public double grow(Soil s);
+    
+    // this function will return the growth of food. 
     protected double grow(){
         this.daysSincePotted++;
         
@@ -45,6 +51,7 @@ public abstract class Food implements Comparable<Food> {
         return (double)Math.round((this.daysSincePotted /this.daysToMature) * 100d) /100d;
     }
     
+    // this function will compare the food, with the param with their sell price
     public int compareTo(Food o) {
         if(this.getSellPrice() == o.getSellPrice()){
             return 0;
@@ -54,6 +61,8 @@ public abstract class Food implements Comparable<Food> {
         return -1;
     }
     
+    
+    // this function will return string representation of food 
     public String toString(){
         return String.format("%s (%s) - %d/%d", this.name, 
                 this.preferredSoil, 

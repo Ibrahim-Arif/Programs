@@ -7,17 +7,21 @@ public class Farmer{
     private int energy;
     private Farm farm;
     
+    // constructor with parameter name
     public Farmer(String n){
         this.name = n;
         this.energy = 100;
         this.farm = null;
     }
     
+    // constructor with params name and farm. 
     public Farmer(String n, Farm f){
         this.name = n;
         this.farm = f;
         this.energy = 100;
     }
+    
+    // getters 
     public Food getFoodFromFarm(int i){
         return this.farm.getFood(i);
     }
@@ -27,6 +31,8 @@ public class Farmer{
     public int getEnergy(){
         return this.energy;
     }
+    
+    // this method will increase the energy of farmer
     public void sleep(){
         this.energy += 35;
         if(this.energy > 100){
@@ -35,6 +41,8 @@ public class Farmer{
         
         this.farm.overNightGrow();
     }
+    
+    // this fucntion will seed the food in the farmer's farm. 
     public boolean seedFood(Food f){
         if(f.getClass().getName().equals("Foods.Vegetable")){
             if(this.farm == null || this.energy < 30 ){
@@ -51,6 +59,8 @@ public class Farmer{
         
         return false;
     }
+    
+    // this function will all farmer to buy new farm 
     public boolean buyFarm(Farm f){
         if(this.farm == null){
             this.farm = f;
@@ -59,6 +69,8 @@ public class Farmer{
         
         return false;
     }
+    
+    // this function will return stirng represenation of farmer. 
     public String toString(){
         String output = "";
         
